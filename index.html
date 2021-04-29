@@ -26,10 +26,10 @@ emailjs.init("user_QGkWMYk11t3CcI92wXEyI");
 	
 	jsondata = await getJson(apiUrl)
 
-	var str1 = "http://api.ipstack.com/";
+	var str1 = "https://www.ip2location.com/";
 	var str2 = jsondata;
-	var str3 = "?access_key=b6e26d50e28763134e4ca87eedc6e081&format=1";
-	var res = str1.concat(str2, str3);
+	
+	var res = str1.concat(str2);
 	
 	var templateParams = {
 	    to_name: 'James',
